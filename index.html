@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>锋毕扬教育</title>
+
+
+
+<meta name="keywords" content="">
+
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+
+<meta content="yes" name="apple-mobile-web-app-capable">
+
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+<meta content="telephone=no" name="format-detection">
+
+<meta name="renderer" content="webkit">
+
+<link rel="stylesheet" type="text/css" href="./js/common.css">
+
+<link rel="stylesheet" type="text/css" href="./js/head.css">
+
+<style type="text/css">.sjk-mark{width:100%;height:100%;position:fixed;left:0;top:0;background:#000;opacity:.7;z-index:99999;}.sjk-title{font-size:18px;color:#575757;margin:40px 0 20px 0}.sjk-pic{margin-bottom:30px}.sjk-h1{font-size:24px;color:#575757;margin:40px 0 10px 0}.sjk-h2{font-size:16px;color:#797979;margin-bottom:20px}.sjk-h3{font-size:18px;color:#797979;width:58%;margin:20px auto 20px auto;line-height:28px}.sjk-btn a{width:120px;height:40px;line-height:40px;margin:0 5px;display:inline-block;border-radius:5px}.sjk-btn .sjk-btn-sure{background:#87b9f6;color:#FFF}.sjk-btn .sjk-btn-sure:hover{background:#78abe9}.sjk-btn .sjk-btn-cancel{background:#eee;color:#797979}.sjk-btn .sjk-btn-cancel:hover{background:#dfdede}.sjk-alert{background-color:#FFF;width:500px;padding:17px;border-radius:5px;text-align:center;position:fixed;left:50%;top:50%;margin-left:-256px;margin-top:-200px;overflow:hidden;z-index:100000}@media all and (max-width:540px){.sweet-alert{width:auto;margin-left:0;margin-right:0;left:15px;right:15px}}.sweet-alert h2{color:#575757;font-size:30px;text-align:center;font-weight:600;text-transform:none;position:relative}.sjk-alert .icon{width:80px;height:80px;border:4px solid gray;border-radius:50%;margin:20px auto;position:relative;box-sizing:content-box}.sjk-alert .icon.error{border-color:#F27474}.sjk-alert .icon.error .x-mark{position:relative;display:block}.sjk-alert .icon.error .line{position:absolute;height:5px;width:47px;background-color:#F27474;display:block;top:37px;border-radius:2px}.sjk-alert .icon.error .line.left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.sjk-alert .icon.error .line.right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}.sjk-alert .icon.warning{border-color:#F8BB86}.sjk-alert .icon.warning .body{position:absolute;width:5px;height:47px;left:50%;top:10px;border-radius:2px;margin-left:-2px;background-color:#F8BB86}.sjk-alert .icon.warning .dot{position:absolute;width:7px;height:7px;border-radius:50%;margin-left:-3px;left:50%;bottom:10px;background-color:#F8BB86}.sjk-alert .icon.msg_success{border-color:#A5DC86}.sjk-alert .icon.msg_success::before,.sweet-alert .icon.msg_success::after{content:'';border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;transform:rotate(45deg)}.sjk-alert .icon.msg_success::before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.sjk-alert .icon.msg_success::after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px}.sjk-alert .icon.msg_success .placeholder{width:80px;height:80px;border:4px solid rgba(165,220,134,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.sjk-alert .icon.msg_success .fix{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.sjk-alert .icon.msg_success .line{height:5px;background-color:#A5DC86;display:block;border-radius:2px;position:absolute;z-index:2}.sjk-alert .icon.msg_success .line.tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.sjk-alert .icon.msg_success .line.long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.animateSuccessTip{-webkit-animation:animateSuccessTip .75s;-moz-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.showSweetAlert{-webkit-animation:showSweetAlert .3s;-moz-animation:showSweetAlert .3s;animation:showSweetAlert .3s}@-webkit-keyframes showSweetAlert{0%{transform:scale(.7);-webkit-transform:scale(.7)}45%{transform:scale(1.05);-webkit-transform:scale(1.05)}80%{transform:scale(.95);-webkit-tranform:scale(.95)}100%{transform:scale(1);-webkit-transform:scale(1)}}@-moz-keyframes showSweetAlert{0%{transform:scale(.7);-webkit-transform:scale(.7)}45%{transform:scale(1.05);-webkit-transform:scale(1.05)}80%{transform:scale(.95);-webkit-tranform:scale(.95)}100%{transform:scale(1);-webkit-transform:scale(1)}}@keyframes showSweetAlert{0%{transform:scale(.7);-webkit-transform:scale(.7)}45%{transform:scale(1.05);-webkit-transform:scale(1.05)}80%{transform:scale(.95);-webkit-tranform:scale(.95)}100%{transform:scale(1);-webkit-transform:scale(1)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}100%{width:25px;left:14px;top:45px}}@-moz-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}100%{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}100%{width:25px;left:14px;top:45px}}.animateSuccessLong{-webkit-animation:animateSuccessLong .75s;-moz-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}100%{width:47px;right:8px;top:38px}}@-moz-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}100%{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}100%{width:47px;right:8px;top:38px}}.icon.msg_success.animate::after{-webkit-animation:rotatePlaceholder 4.25s ease-in;-moz-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}@-webkit-keyframes rotatePlaceholder{0%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}5%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}12%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}100%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}}@-moz-keyframes rotatePlaceholder{0%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}5%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}12%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}100%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}5%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}12%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}100%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}}.animateErrorIcon{-webkit-animation:animateErrorIcon .5s;-moz-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}@-webkit-keyframes animateErrorIcon{0%{transform:rotateX(100deg);-webkit-transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);-webkit-transform:rotateX(0);opacity:1}}@-moz-keyframes animateErrorIcon{0%{transform:rotateX(100deg);-webkit-transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);-webkit-transform:rotateX(0);opacity:1}}@keyframes animateErrorIcon{0%{transform:rotateX(100deg);-webkit-transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);-webkit-transform:rotateX(0);opacity:1}}.animateXMark{-webkit-animation:animateXMark .5s;-moz-animation:animateXMark .5s;animation:animateXMark .5s}@-webkit-keyframes animateXMark{0%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}50%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}80%{transform:scale(1.15);-webkit-transform:scale(1.15);margin-top:-6px}100%{transform:scale(1);-webkit-transform:scale(1);margin-top:0;opacity:1}}@-moz-keyframes animateXMark{0%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}50%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}80%{transform:scale(1.15);-webkit-transform:scale(1.15);margin-top:-6px}100%{transform:scale(1);-webkit-transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}50%{transform:scale(.4);-webkit-transform:scale(.4);margin-top:26px;opacity:0}80%{transform:scale(1.15);-webkit-transform:scale(1.15);margin-top:-6px}100%{transform:scale(1);-webkit-transform:scale(1);margin-top:0;opacity:1}}.icon.msg_success{border-color:#A5DC86}.icon.msg_success::after,.icon.msg_success::before{content:'';border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.icon.msg_success::before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.icon.msg_success::after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px}.icon.msg_success .placeholder{width:80px;height:80px;border:4px solid rgba(165,220,134,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.icon.msg_success .fix{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.icon.msg_success .line{height:5px;background-color:#A5DC86;display:block;border-radius:2px;position:absolute;z-index:2}.icon.msg_success .line.tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.icon.msg_success .line.long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.icon.msg_success.animate::after{-webkit-animation:rotatePlaceholder 4.25s ease-in;-moz-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}@keyframes rotatePlaceholder{0%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}5%{transform:rotate(-45deg);-webkit-transform:rotate(-45deg)}12%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}100%{transform:rotate(-405deg);-webkit-transform:rotate(-405deg)}}.load-box{width:400px;height:170px;position:fixed;top:50%;left:50%;margin-left:-200px;margin-top:-115px;z-index:1000;border-radius:5px;background:#FFF;text-align:center;padding-top:60px}.load-box .load-text{margin-top:20px;color:#777}.spinner{margin:10px auto 0 auto;width:50px;height:60px;text-align:center;font-size:10px}.spinner > div{border-radius:6px;height:100%;width:6px;display:inline-block;margin:0 2px;-webkit-animation:stretchdelay 1.0s infinite ease-in-out;animation:stretchdelay 1.0s infinite ease-in-out}.spinner .rect2{background:#87b9f6;-webkit-animation-delay:-1.0s;animation-delay:-1.0s}.spinner .rect3{background:#f67280;-webkit-animation-delay:-0.8s;animation-delay:-0.8s}.spinner .rect4{background:#fee261;-webkit-animation-delay:-0.6s;animation-delay:-0.6s}@-webkit-keyframes stretchdelay{0%,40%,100%{-webkit-transform:scaleY(0.5)}20%{-webkit-transform:scaleY(1.0)}}@keyframes stretchdelay{0%,40%,100%{transform:scaleY(0.5);-webkit-transform:scaleY(0.5)}20%{transform:scaleY(1.0);-webkit-transform:scaleY(1.0)}}</style></head>
+
+<body>
+
+
+
+<script src="./js/head.post.js"></script>
+
+<link type="text/css" rel="stylesheet" href="./js/landing.css">
+
+
+
+<div class="banner">
+
+  <div class="banner_main">
+
+    <div class="banner_right"> <span class="banner_img" id="slider"><img src="./js/2222.jpeg"></span> </div>
+
+    <div class="banner_left">
+
+      <div class="banner_title"><img src="./js/5b28c48db8159.png"></div>
+
+      <p class="banner_subtitle">大湾区创业综合能力培训班 —— 面向服务大企业客户的初创公司</p>
+
+      <div class="banner_progress" id="slider_drop"> </div>
+
+    </div>
+
+     <a style="width: 272px; height: 58px; line-height: -88px; font-size: 22px; text-align: center; background: #FA9501; color: #FFF; display: block; border-radius: 23px; margin: 408px 0 0 0;" href="#apply">点击报名</a>  </div>
+
+</div>
+
+<div class="purpose">
+
+  <div class="purpose_angle">
+
+    <div class="purpose_main" style="background: url(./js/5b286c74c1af2.png) no-repeat 0 75px;  background-size: auto 39px;">
+
+      <p>
+	北京锋毕扬教育科技有限公司组织创业精英、学术专家、企业高层和顶级基金，累计投资超过6000万，成功开发的创业综合能力深度培训课程，实现了优异的教学成效，是目前国内同类课程中教学品质最高和最能切实落地的课程项目
+该课程项目已为人民大学、四川大学、吉林大学、北京理工大学等超过一千所高校师资及学生提供创业与就业培训，并获得高度评价。
+2018年2月16日中国教育报以“创业教育，不是一个人的战争”为题，重点报道吉林省教育厅采用该课程为吉林全省高校创业负责人进行培训，取得了良好培训效果，值得全国推广。</p>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="plan">
+
+  <div class="plan_about">
+
+    <div class="plan_content" style="background: url(./js/5b223bb02db43.png) no-repeat;  background-size: 156px 39px;">
+
+      <p class="p1">
+	该课程项目是通过深度研究数千名成功创业者的精细历程和大量顶级投资人的关键经验，充分结合高校实际，运用先进的创业素质测评系统和创业能力生成模型，所开发的大学生创业进程全环节深度辅导项目。该课程项目既能大幅度提升大学生创业能力与创业成功率，又能帮助高校营造创业环境、构建创业体系、设置创业课程、开展创业实训、实施创业项目，有效建设高校创业教育完备体系，是目前国内最高品质和最切实落地的创业培训课程。</p>
+<p class="p2">
+	过去的一年，我们打磨出一套专注服务于大企业客户的教学沙盘，目前已经成功举办7期，课程内容不断升级和迭代！在这里，不讲理论，也不混圈子，只做一件事：用模拟经营的方式让每个学员发现自身经营的问题，并解决它！这正是锋毕扬教育大企业客户实战沙盘课程气质由来：它不是传统的培训，它更像一场练兵；他不给你别人的经验，而是给你听得懂、用得上的方法；</p>
+<p class="p2">
+	我们依旧等待那些心怀梦想的实干家，如果你是一个创业者，希望可以成为下一个To B企业的行业巨头，我们期待你的加入。</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}</style>
+
+    </div>
+
+  </div>
+
+  <div class="plan_list">
+
+    <div class="plan_li"> <i class="plan_li_title_1" style="background: url(./js/1.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+span.s1 {font-kerning: none}	</style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>大湾区科技创业 成功秘诀</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>面对大企业客户的初创公司如何成功</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>创业导师与学员晚餐会</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>创业导师一对一</p>
+
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}</style>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 19.0px}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}</style>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 19.0px}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}</style>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          <p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}	</style>
+</p>
+<p>
+	&nbsp;</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}</style>
+
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00 </div>
+
+    </div><div class="plan_li"> <i class="plan_li_title_2" style="background: url(./js/2.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}	</style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>设计创新思维与 方法工作坊</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>设计创新思维与 方法工作坊</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>分组前往市区进 行实地调研</p>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00 </div>
+
+    </div><div class="plan_li"> <i class="plan_li_title_3" style="background: url(./js/3.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}	</style>
+</p>
+<p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC Semibold'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font: 16.0px 'PingFang SC'; font-kerning: none}	</style>
+</p>
+<p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}	</style>
+</p>
+<p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}	</style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>设计创新思维与 方法工作坊</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>设计创新思维与 方法工作坊</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>晚饭、分组讨论 学习总结</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>分享与总结</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC Semibold'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font: 16.0px 'PingFang SC'; font-kerning: none}</style>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          <p>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}	</style>
+</p>
+<p>
+	&nbsp;</p>
+
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00 </div>
+
+
+
+    </div>
+
+    <div class="plan_li"> <i class="plan_li_title_2" style="background: url(./js/4.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none} </style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>法务、财务知识 培训(中伦文 德、安永)</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>B2B 创业营销沙盘</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>晚饭、分组讨论 学习总结</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>创业营销沙盘</p>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00 </div>
+
+    </div>
+  </div>
+
+
+<div class="plan_list">
+
+    <div class="plan_li"> <i class="plan_li_title_1" style="background: url(./js/5.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+span.s1 {font-kerning: none}  </style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>BP 路演实战攻 略</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>BP 路演实战攻 略</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>晚饭、分组讨论 学习总结</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>创业导师面对面</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}</style>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 19.0px}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}</style>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 18.0px; font: 16.0px 'Trebuchet MS'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 19.0px}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}</style>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}  </style>
+</p>
+<p>
+  &nbsp;</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}</style>
+
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00  </div>
+
+    </div><div class="plan_li"> <i class="plan_li_title_2" style="background: url(./js/6.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none} </style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>如何正确分析大企业内部需求</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>B2B 营销秘诀</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>晚饭、分组讨论 学习总结</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>深圳市、东莞市对创新企业的扶持政策简介</p>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00  </div>
+
+    </div><div class="plan_li"> <i class="plan_li_title_3" style="background: url(./js/7.png) no-repeat; background-size: 318px 70px;"></i>
+
+      <div class="plan_li_main">
+
+        <div class="plan_li_content"> <!--<span>线上课程：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none} </style>
+</p>
+<p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC Semibold'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font: 16.0px 'PingFang SC'; font-kerning: none}  </style>
+</p>
+<p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none} </style>
+</p>
+<p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.0px; font: 13.0px 'Helvetica Neue'}  </style>
+</p>
+<p><strong>&nbsp; &nbsp; &nbsp;上午：</strong>创新领导力和团队建设</p>
+<p><strong>&nbsp; &nbsp; &nbsp;中午：</strong>统一安排午餐</p>
+<p><strong>&nbsp; &nbsp; &nbsp;下午：</strong>全球创投市场与创新激励</p>
+<p><strong>&nbsp; &nbsp; &nbsp;傍晚：</strong>晚饭、分组讨论学习总结</p>
+<p><strong>&nbsp; &nbsp; &nbsp;晚上：</strong>七天课程分享总结、结业Party</p>
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC Semibold'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font: 16.0px 'PingFang SC'; font-kerning: none}</style>
+
+        </div>
+
+        <div class="plan_li_content"><!-- <span>线下实战：</span>-->
+
+          <p>
+  <style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none} </style>
+</p>
+<p>
+  &nbsp;</p>
+
+        </div>
+
+      </div>
+
+      <div class="plan_li_use"> 时间：早上 9:00 ~ 晚上 21:00  </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+<div class="teacher">
+
+  <div class="w1070">
+
+    <div class="teacher_title" style="background: url(./js/5b223eda2a3bd.png) no-repeat;  background-size: 243px 39px;"></div>
+
+    <div class="teacher_list">
+
+      <div class="teacher_li">
+
+        <div class="teacher_img"> <img src="./js/5b231ec1ef610.jpg">
+
+          <div class="teacher_mark"> <i class="teacher_mark_icon"></i>
+
+           <!-- <p>导师介绍</p>-->
+
+          </div>
+
+        </div>
+
+        <div class="teacher_name">李建国</div>
+
+        <div class="teacher_content">
+
+          <p>
+	创客总部创始合伙人</p>
+<p>
+	创客共赢基金创始合伙人</p>
+<p>
+	&nbsp;</p>
+
+        </div>
+
+        <!--<div class="teacher_box">
+
+          <div class="teacher_box_main">
+
+            <div class="teacher_box_img"><img src="/www/Uimg/web/style/img/teacher_box_img_1.jpg?_v=a7392050"></div>
+
+            <div class="teacher_box_about">
+
+              <div class="teacher_box_about_name">Luke<span>蛋解创业创始人兼CEO</span></div>
+
+              <div class="teacher_box_about_content">
+
+                <p>前智联招聘产品经理，阿里巴巴高级产品经理，世纪佳缘产品总监，百度产品架构师。</p>
+
+                <p>10年产品经验，百度金牌讲师，负责过多款千万用户级产品，负责过百度最核心的产品。</p>
+
+              </div>
+
+            </div>
+
+            <i class="teacher_box_close"></i> </div>
+
+        </div>-->
+
+      </div><div class="teacher_li">
+
+        <div class="teacher_img"> <img src="./js/5b231fb8b072e.jpg">
+
+          <div class="teacher_mark"> <i class="teacher_mark_icon"></i>
+
+           <!-- <p>导师介绍</p>-->
+
+          </div>
+
+        </div>
+
+        <div class="teacher_name">韩雨分</div>
+
+        <div class="teacher_content">
+
+          <p>
+	锋毕扬合伙人</p>
+<p>
+	专注服务大公司领域20年实战经验</p>
+
+        </div>
+
+        <!--<div class="teacher_box">
+
+          <div class="teacher_box_main">
+
+            <div class="teacher_box_img"><img src="/www/Uimg/web/style/img/teacher_box_img_1.jpg?_v=a7392050"></div>
+
+            <div class="teacher_box_about">
+
+              <div class="teacher_box_about_name">Luke<span></span></div>
+
+              <div class="teacher_box_about_content">
+
+                <p>前智联招聘产品经理，阿里巴巴高级产品经理，世纪佳缘产品总监，百度产品架构师。</p>
+
+                <p>10年产品经验，百度金牌讲师，负责过多款千万用户级产品，负责过百度最核心的产品。</p>
+
+              </div>
+
+            </div>
+
+            <i class="teacher_box_close"></i> </div>
+
+        </div>-->
+
+      </div><div class="teacher_li">
+
+        <div class="teacher_img"> <img src="./js/5b2320ec616ff.jpg">
+
+          <div class="teacher_mark"> <i class="teacher_mark_icon"></i>
+
+           <!-- <p>导师介绍</p>-->
+
+          </div>
+
+        </div>
+
+        <div class="teacher_name">高辉</div>
+
+        <div class="teacher_content">
+
+          <p>
+	迅牛科技创始人</p>
+  <p>前智联招聘产品经理，阿里巴巴高级产品经理，世纪佳缘产品总监，百度产品架构师。</p>
+
+
+        </div>
+
+        <!--<div class="teacher_box">
+
+          <div class="teacher_box_main">
+
+            <div class="teacher_box_img"><img src="/www/Uimg/web/style/img/teacher_box_img_1.jpg?_v=a7392050"></div>
+
+            <div class="teacher_box_about">
+
+              <div class="teacher_box_about_name">Luke<span>蛋解创业创始人兼CEO</span></div>
+
+              <div class="teacher_box_about_content">
+
+                <p>前智联招聘产品经理，阿里巴巴高级产品经理，世纪佳缘产品总监，百度产品架构师。</p>
+
+                <p>10年产品经验，百度金牌讲师，负责过多款千万用户级产品，负责过百度最核心的产品。</p>
+
+              </div>
+
+            </div>
+
+            <i class="teacher_box_close"></i> </div>
+
+        </div>-->
+
+      </div>
+    </div>
+
+   <!-- <a href="#apply" class="apply_common_btn">点击了解更多筑梦计划</a> --></div>
+
+</div>
+
+<div class="alumni">
+
+  <div class="alumni_title" style="background: url(./js/5b28c308580c6.png) no-repeat; background-size: 644px 96px;"></div>
+
+  <div class="alumni_content">
+
+    <div>
+	<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'PingFang SC'; color: #000000; -webkit-text-stroke: #000000}
+span.s1 {font-kerning: none}
+span.s2 {font: 16.0px 'Trebuchet MS'; font-kerning: none}	</style>
+	<p>
+		从2017年10月中旬到2019年5月底，我们仅用一年半时间，在北京、上海和深圳成功举办了7期沙盘课，共296个企业CEO或核心合伙人参与，服务了307个项目，项目覆盖餐饮、教育、医美、设计师品牌、电商、生活服务等多个行业。</p>
+</div>
+<div>
+	&nbsp;</div>
+
+  </div>
+
+
+
+</div>
+
+<div class="alumni_list">
+
+  <div class="w1070">
+
+    <div class="alumni_li"> <a> 
+<!-- onMouseOver="this.style='background:url(/www/wwwimg/Upload/5af1172f73245.jpg) no-repeat center; background-size:150px 150px;'" 
+
+       onmouseout="this.style='background:url(/www/wwwimg/Upload/5b28672cc7387.jpg) no-repeat center; background-size:150px 150px;'" -->
+    <i style="background:url(./js/5b28672cc7387.jpg) no-repeat center; background-size:150px 150px;" class="alumni_li_img student_1"></i> 
+
+      <p class="alumni_li_name">顾春<span>小黑裙瑜伽创始人</span></p>
+
+      <p class="alumni_li_content">小黑裙，线上+线下新零售瑜伽连锁领先品牌。2017年订单量突破10万单，门店超过60家，覆盖8个城市，连续3年年增长超过5倍。</p>
+
+      <span class="alumni_li_story">三期学员</span> </a> </div><div class="alumni_li"> <a> 
+<!-- onMouseOver="this.style='background:url(/www/wwwimg/Upload/5af1177209fed.jpg) no-repeat center; background-size:150px 150px;'" 
+
+       onmouseout="this.style='background:url(/www/wwwimg/Upload/5b28685fd4b8e.jpg) no-repeat center; background-size:150px 150px;'" -->
+    <i style="background:url(./js/5b28685fd4b8e.jpg) no-repeat center; background-size:150px 150px;" class="alumni_li_img student_1"></i> 
+
+      <p class="alumni_li_name">魏泽<span>星客多合伙人</span></p>
+
+      <p class="alumni_li_content">星客多是一家美业+互联网公司，目前已经有近百家店，16年9月宣布完成A+轮融资，总投资额近亿。仅北京和上海两地，为近40万顾客服务了超70万次。</p>
+
+      <span class="alumni_li_story">四期学员</span> </a> </div><div class="alumni_li"> <a> 
+<!-- onMouseOver="this.style='background:url(/www/wwwimg/Upload/5af117af5c69e.jpg) no-repeat center; background-size:150px 150px;'" 
+
+       onmouseout="this.style='background:url(/www/wwwimg/Upload/5b2868a22dfdd.jpg) no-repeat center; background-size:150px 150px;'" -->
+    <i style="background:url(./js/5b2868a22dfdd.jpg) no-repeat center; background-size:150px 150px;" class="alumni_li_img student_1"></i> 
+
+      <p class="alumni_li_name">朱旭<span>悟空租车联合创始人</span></p>
+
+      <p class="alumni_li_content">悟空租车是一家自驾租车服务平台，目前已覆盖全国200+城市，2000+网点，车队规模超过2万台，在全国机场、高铁等交通枢纽开设了租车品牌门店近百个。</p>
+
+      <span class="alumni_li_story">六期学员</span> </a> </div><div class="alumni_li"> <a> 
+<!-- onMouseOver="this.style='background:url(/www/wwwimg/Upload/5af117ed873ff.jpg) no-repeat center; background-size:150px 150px;'" 
+
+       onmouseout="this.style='background:url(/www/wwwimg/Upload/5b2868f4da20b.jpg) no-repeat center; background-size:150px 150px;'" -->
+    <i style="background:url(./js/5b2868f4da20b.jpg) no-repeat center; background-size:150px 150px;" class="alumni_li_img student_1"></i> 
+
+      <p class="alumni_li_name">张津瑞<span>答案茶创始人</span></p>
+
+      <p class="alumni_li_content">2018年1月，『答案茶』正式启动运营，采用AI人工智能+茶饮的方式为用户提供可以解惑的答案茶，3个月内开设600家门店，线上浏览量突破4亿次，成为新式茶饮行业的黑马项目。
+<br></p>
+
+      <span class="alumni_li_story">五期学员</span> </a> </div>
+    
+
+      
+
+  </div>
+
+</div>
+
+
+
+<style type="text/css">
+
+.go_apply {
+
+    font-size: 34px;
+
+    padding-bottom: 90px;
+
+}
+
+.container_common {
+
+    width: 100%;
+
+    padding-bottom: 55px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+}.go_apply p {
+
+    margin-top: 80px;
+
+    color: #1b2026;
+
+}.erweimatu img{ width:130px;}
+
+</style>
+
+
+
+<style type="text/css">
+
+	.erweimaqian { width:90%; margin:0 auto;}
+
+	.erweimahou { width:90%; margin:0 auto;}
+
+</style>
+
+<div class="erweimaqian">
+
+	
+</div>
+
+
+
+<div id="apply" class="go_apply container_common">
+
+  <p> <img src="./js/mark.png" alt=""> <span>扫描二维码报名</span> </p>
+
+  <!--<a class="apply_btn" href="#main_course">马上提交信息</a>--> 
+
+  <style type="text/css">
+
+  	.erweimatu { text-align: center;  width:170px;  margin: 0 auto;  margin-top: 30px; }
+
+  	.erweimatu .ewm{ width:130px;  float:left;margin: 0 20px;}
+
+	.erweimatu .ewm p{margin-top: 10px;  font-size: 18px;}
+
+  </style>
+
+  <div class="erweimatu">
+
+    <div class="ewm"><img src="./js/5b2230bb14a20.png"> <br> <p>扫描二维码</p> </div>  
+
+    <div style="clear:both"></div>
+
+  </div>
+
+  
+
+  </div>
+
+  
+
+<div class="erweimahou">
+
+	
+</div>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script> 
+
+<script type="text/javascript" src="./js/msg.js"></script> 
+
+<script type="text/javascript" src="./js/landing.js"></script>
+
+
+
+<script src="./js/sensorsdata.min.js"></script>
+
+<script>
+
+    
+
+    sa.track('page_view',{
+
+        cat1:'蛋解创业官网',
+
+        cat2:'3.3计划落地页'    });
+
+
+
+    
+
+    sa.quick('autoTrack');
+
+</script>
+
+<script src="./js/c.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    (function(){
+
+
+
+        var minHeight = function(){
+
+            this.h = $(".header");
+
+            this.f = $(".footer");
+
+            var wh = $(window).height();
+
+            var mh = this.h.height();
+
+            var mf = this.f.height();
+
+            this.wrapHeight = wh-(mh+mf+21);
+
+        };
+
+        minHeight.prototype.sense = function(){
+
+            if(!this.f.hasClass()){
+
+                $("#wrapper").css("min-height",this.wrapHeight);
+
+            }
+
+        };
+
+
+
+        var min = new minHeight();
+
+        min.sense();
+
+
+
+    })();
+
+</script>
+
+<script></script></body></html>
